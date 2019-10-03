@@ -7,6 +7,11 @@ class ArenaLocators {
     languageOption(lang) { return $('input[type="checkbox"][name="multiselect_SubLanguageID"][value="' + lang + '"]') }
     
 
+    get seasonTableElems() { return $('#search_results > tbody').$$('tr:not(.head)') }
+    get subtitleTableElems() { return $('#search_results > tbody').$$('tr:not(.head)') }
+    get subtitleTitlesTableElems() { return $('fieldset > table > tbody').$$('tr:not(.head)') }
+    
+
     // TO DELETE - some examples
     get searchBoxa() { return $('#lst-ib') }
     get stockName() { return $('div[data-attrid="title"]') }
